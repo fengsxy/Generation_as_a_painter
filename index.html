@@ -15,8 +15,9 @@
       <button class="on" data-page="stylization.html">CODE STYLIZATION</button>
       <button data-page="drawing.html">NATURAL DRAWING</button>
       <button data-page="prompt-to-code.html">PROMPT-TO-CODE</button>
+      <button data-page="realist-portrait.html">REALIST PORTRAIT</button>
     </nav>
-    <div class="meta" id="meta">01 / 03</div>
+    <div class="meta" id="meta">01 / 04</div>
   </header>
   <main class="stage"><iframe id="experiment" title="Experiment" src="stylization.html"></iframe></main>
   <script>
@@ -25,7 +26,7 @@
       buttons.forEach(item=>item.classList.remove('on'));
       button.classList.add('on');
       frame.src=button.dataset.page;
-      meta.textContent=`0${index+1} / 03`;
+      meta.textContent=`0${index+1} / 04`;
     }));
   </script>
 </body>
