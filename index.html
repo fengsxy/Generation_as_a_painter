@@ -19,8 +19,9 @@
       <button data-page="pure-code-natural.html">PURE CODE</button>
       <button data-page="pure-code-landscape.html">PURE LANDSCAPE</button>
       <button data-page="stroke-efficiency.html">STROKE EFFICIENCY</button>
+      <button data-page="portrait-mark-style.html">MARK PORTRAIT</button>
     </nav>
-    <div class="meta" id="meta">01 / 07</div>
+    <div class="meta" id="meta">01 / 08</div>
   </header>
   <main class="stage"><iframe id="experiment" title="Experiment" src="stylization.html"></iframe></main>
   <script>
@@ -29,7 +30,7 @@
       buttons.forEach(item=>item.classList.remove('on'));
       button.classList.add('on');
       frame.src=button.dataset.page;
-      meta.textContent=`0${index+1} / 07`;
+      meta.textContent=`0${index+1} / 08`;
     }));
   </script>
 </body>
