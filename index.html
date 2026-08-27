@@ -14,9 +14,9 @@
     <nav class="tabs" aria-label="Experiments">
       <button class="on" data-page="stylization.html">CODE STYLIZATION</button>
       <button data-page="drawing.html">NATURAL DRAWING</button>
-      <button disabled>PROMPT-TO-CODE · NEXT</button>
+      <button data-page="prompt-to-code.html">PROMPT-TO-CODE</button>
     </nav>
-    <div class="meta" id="meta">01 / 02</div>
+    <div class="meta" id="meta">01 / 03</div>
   </header>
   <main class="stage"><iframe id="experiment" title="Experiment" src="stylization.html"></iframe></main>
   <script>
@@ -25,7 +25,7 @@
       buttons.forEach(item=>item.classList.remove('on'));
       button.classList.add('on');
       frame.src=button.dataset.page;
-      meta.textContent=`0${index+1} / 02`;
+      meta.textContent=`0${index+1} / 03`;
     }));
   </script>
 </body>
