@@ -24,8 +24,9 @@
       <button data-page="masked-painter.html">MASKED PAINTER</button>
       <button data-page="masked-full-painter.html">FULL MASK PAINT</button>
       <button data-page="code-denoiser.html">CODE DENOISER</button>
+      <button data-page="agent-denoiser-style.html">AGENT DENOISER</button>
     </nav>
-    <div class="meta" id="meta">01 / 12</div>
+    <div class="meta" id="meta">01 / 13</div>
   </header>
   <main class="stage"><iframe id="experiment" title="Experiment" src="stylization.html"></iframe></main>
   <script>
@@ -34,7 +35,7 @@
       buttons.forEach(item=>item.classList.remove('on'));
       button.classList.add('on');
       frame.src=button.dataset.page;
-      meta.textContent=`0${index+1} / 12`;
+      meta.textContent=`0${index+1} / 13`;
     }));
   </script>
 </body>
